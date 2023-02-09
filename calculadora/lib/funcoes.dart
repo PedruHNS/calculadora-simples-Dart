@@ -9,3 +9,13 @@ String dados({required mensagem}) {
   return input;
 }
 
+
+class Calcule {
+  double num1;
+  String op;
+  double num2;
+
+  Calcule(this.num1, this.op, this.num2);
+
+
+}
