@@ -5,7 +5,7 @@ void main(List<String> arguments) {
   final operador = dados(mensagem: "digite a operação que seja fazer");
   final valor2 = double.parse(dados(mensagem: "digite o valor 2"));
 
+  Calcule calculadora = Calcule(valor1, operador, valor2);
 
-
- 
+  calculadora.calculo();
 }
