@@ -1,11 +1,16 @@
 import 'package:calculadora/funcoes.dart';
 
-void main(List<String> arguments) {
-  final valor1 = double.parse(dados(mensagem: "digite o valor 1"));
-  final operador = dados(mensagem: "digite a operação que seja fazer");
-  final valor2 = double.parse(dados(mensagem: "digite o valor 2"));
-
-  Calcule calculadora = Calcule(valor1, operador, valor2);
-
-  calculadora.calculo();
+void main() {
+  String sair = dados(mensagem: "deseja finalizar o calculo").toLowerCase();
+  if (sair == "sim") {
+    print("finalizado");
+    return;
+  }
+  if (sair == "nao") {
+    check();
+    main();
+    return;
+  }
+  print("não entendi, digite novamente ");
+  return;
 }
